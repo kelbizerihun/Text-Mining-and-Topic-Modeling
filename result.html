@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraped Content</title>
+</head>
+<body>
+    <h2>Scraped Content</h2>
+    <p>Website URL: {{ url }}</p>
+    <p>Content to Scrape: {{ content }}</p>
+    <h3>Scraped Content:</h3>
+    <ul>
+        {% for item in scraped_content %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
